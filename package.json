@@ -1,0 +1,29 @@
+{
+  "name": "100devs-bot",
+  "version": "1.0.0",
+  "description": "Twitter bot to retweet #100Devs content",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeyReggie/100Devs-Bot.git"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "javascript",
+    "node"
+  ],
+  "author": "Reginald Traywick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HeyReggie/100Devs-Bot/issues"
+  },
+  "homepage": "https://github.com/HeyReggie/100Devs-Bot#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "twitter-v2": "github:edsu/twitter-v2"
+  }
+}
