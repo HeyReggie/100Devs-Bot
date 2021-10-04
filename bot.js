@@ -19,24 +19,20 @@ const retweet = async () => {
     errors,
   } = await client.get("tweets/search/recent", params);
 
+  if (errors) {
+    console.log("Errors:", errors);
+    return;
+  }
   const retweetId = tweets[Math.floor(Math.random() * 2)].id;
-
-  //console.log(retweetId);
 
   const response = await client.post(`users/${process.env.USER_ID}/retweets`, {
     tweet_id: retweetId,
   });
 
-  if (errors) {
-    console.log("Errors:", errors);
-    return;
-  }
-
   console.log(response);
-  //console.log(tweets);
   console.log(meta);
 };
 
 retweet();
 
-setInterval(retweet, 60000);
+setInterval(retweet, 60000 * 5);

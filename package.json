@@ -24,6 +24,6 @@
   "homepage": "https://github.com/HeyReggie/100Devs-Bot#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "twitter-v2": "github:edsu/twitter-v2"
+    "twitter-v2": "github:HeyReggie/twitter-v2"
   }
 }
