@@ -2,7 +2,9 @@
   "name": "100devs-bot",
   "version": "1.0.0",
   "description": "Twitter bot to retweet #100Devs content",
-  "main": "bot.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "node bot.js"
   },
