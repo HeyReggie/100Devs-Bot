@@ -29,10 +29,8 @@ const retweet = async () => {
     tweet_id: retweetId,
   });
 
-  console.log(response);
-  console.log(meta);
 };
 
 retweet();
 
-setInterval(retweet, 60000 * 5);
+setInterval(retweet, 60000 * 10);
